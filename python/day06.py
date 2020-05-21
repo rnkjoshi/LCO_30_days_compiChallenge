@@ -1,0 +1,5 @@
+freeBytes=int(input())
+usedBytes=int(input())
+deleteBytes=int(input())
+addFileBytes=int(input())
+print((freeBytes+(usedBytes-deleteBytes))-addFileBytes)
