@@ -1,16 +1,15 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-void solve(int n){
-    int num=0;
-    while(n > 0){
-        num += n%10;
-        n/=10;
-    }
-    cout<<num;
-}
+
 int main(){
-    int n;
-    cin>>n;
-    solve(n);
+    int hour,minute;
+    cin>>hour>>minute;
+    double minAngle = 6 * minute;
+    double hourAngle = 30.0 * hour;
+    double angle = abs(minAngle-hourAngle);
+    if(angle == 0.0)
+        cout<<"both are at same point";
+    else
+        cout<<"angle between minutes and hour is = "<<angle;
 }
