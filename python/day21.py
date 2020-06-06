@@ -1,10 +1,9 @@
-def solve(int n):
-    num = 0
-    while n > 0:
-        num = num + n%10
-        n = n / 10
-    print(num)
-
-
-number = int(input())
-solve(number)
+hour = int(input())
+minute = int(input())
+minAngle = 6*minutes
+hourAngle = 30 * hour
+angle = abs(minAngle-hourAngle)
+if angle == 0:
+    print("Both are at same point")
+else:
+    print("angle between hour and minutes is = ",angle)
